@@ -10,8 +10,13 @@ public class Controller {
     Implementation i = new Implementation();
 
     @RequestMapping("/stoneToKilogram")
-    public double stoneToKilogram(@RequestParam double st){
-        return i.stoneToKilogram(st);
+    public double stoneToKilogram(@RequestParam double stone){
+        return i.stoneToKilogram(stone);
+    }
+
+    @RequestMapping("/ounceToGram")
+    public double ounceToGram(@RequestParam double ounce){
+        return i.ounceToGram(ounce);
     }
 
 }
