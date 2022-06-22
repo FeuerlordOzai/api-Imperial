@@ -19,4 +19,15 @@ class ImperialApplicationTests {
         assertEquals(expected, result);
     }
 
+    @Test
+    public void testOunceToGram()
+    {
+        var result = sut.ounceToGram(1);
+
+        var expected = 28.35;
+
+        assertEquals(expected, result);
+    }
+
+
 }
